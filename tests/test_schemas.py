@@ -3,12 +3,12 @@ import unittest
 from os import listdir
 from os.path import abspath, dirname, join
 
-from rac_schemas import handle_schema_filename, is_valid
-from rac_schemas.exceptions import ValidationError
+from pitt_schemas import handle_schema_filename, is_valid
+from pitt_schemas.exceptions import ValidationError
 
 base_path = dirname(dirname(abspath(__file__)))
 
-schemas_dir = join(base_path, "rac_schemas", "schemas")
+schemas_dir = join(base_path, "pitt_schemas", "schemas")
 fixtures_dir = join(base_path, "fixtures")
 
 

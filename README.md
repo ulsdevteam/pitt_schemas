@@ -1,4 +1,4 @@
-# rac_schemas
+# pitt_schemas
 
 JSON schemas and validation helpers.
 
@@ -18,7 +18,7 @@ JSON schemas and validation helpers.
 The recommended way to install this package is using `pip`:
 
 ```
-pip install rac_schemas
+pip install pitt_schemas
 ```
 
 ## Usage
@@ -26,31 +26,27 @@ pip install rac_schemas
 This library has one main public method, `is_valid()`, which takes a dict as the first argument and a schema filename as the second.
 
 ```
-from rac_schemas import is_valid
+from pitt_schemas import is_valid
 
 data = {"key": "value" ... }
 is_valid(data, "object.json")
 ```
 
-`rac_schemas` will attempt to add an appropriate extension to schema filenames in cases where it is either missing or incorrect. For example, if either `schema` and `schema.org` as schema filenames, `rac_schemas` will attempt to open `schema.json`.
+`pitt_schemas` will attempt to add an appropriate extension to schema filenames in cases where it is either missing or incorrect. For example, if either `schema` and `schema.org` as schema filenames, `pitt_schemas` will attempt to open `schema.json`.
 
 Invalid data will raise a `jsonschema.exceptions.ValidationError`, and an invalid schema filename will raise a `FileNotFoundError`.
 
 ### Available schemas
 
-All schemas are located in the `schemas/` subdirectory of the `rac_schemas/` directory.
+All schemas are located in the `schemas/` subdirectory of the `pitt_schemas/` directory.
 
 #### Tests
 
-`rac_schemas` comes with unit tests as well as linting. The easiest way to make sure all tests pass is to run `tox` from the root of the repository. This will execute all tests, and will also run `autopep8` and `flake8` linters against the codebase.
+`pitt_schemas` comes with unit tests as well as linting. The easiest way to make sure all tests pass is to run `tox` from the root of the repository. This will execute all tests, and will also run `autopep8` and `flake8` linters against the codebase.
 
 ## Documentation
 
-Automatically generated HTML documentation in the `docs/` directory based upon `.json` files in the `schemas/` subdirectory of the `rac_schemas/` directory.
-
-A simplified overview of the data model is below:
-
-![Simplified data model overwiew](Simplified_Data_Model.png "Data Model Overview")
+Automatically generated HTML documentation in the `docs/` directory based upon `.json` files in the `schemas/` subdirectory of the `pitt_schemas/` directory.
 
 ### Requirements
 

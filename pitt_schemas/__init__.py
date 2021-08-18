@@ -40,7 +40,7 @@ def is_valid(data, schema_name):
     Raises:
         TypeError: if data is not a dict
         FileNotFoundError: if a schema file cannot be found
-        rac_schemas.exceptions.ValidationError: if the validation fails
+        pitt_schemas.exceptions.ValidationError: if the validation fails
     """
     if not isinstance(data, dict):
         raise TypeError(
