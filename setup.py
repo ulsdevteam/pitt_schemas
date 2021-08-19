@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(name='pitt_schemas',
-      version='0.1',
+      version='0.11',
       description='Pitt JSON Schemas and validators',
       url='https://github.com/ulsdevteam/pitt_schemas',
       author='University of Pittsburgh Library System, Systems Development',
