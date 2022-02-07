@@ -2,6 +2,8 @@
 
 JSON schemas and validation helpers.
 
+This is a localisze clone from the Rockefeller Center schemas: https://github.com/RockefellerArchiveCenter/rac_schemas
+
 ## Requirements
 *   Python 3.4 or higher
 *   [jsonschema](https://python-jsonschema.readthedocs.io/en/stable/)
